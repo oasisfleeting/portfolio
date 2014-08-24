@@ -8,8 +8,15 @@
 		<meta name="description" content="Fullscreen Layout with Page Transitions" />
 		<meta name="keywords" content="professional web design, go lang, angular, api, webservices, modernizr, jquery, php, phalcon" />
 		<meta name="author" content="Lyle Mcclanahan | Professional Developer" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		
+                <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+                <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+                <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+                <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+                <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+                <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+                <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+                <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+                <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />		
 		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" />
 		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
@@ -43,9 +50,11 @@
 							    $url_path = "images/large/";
 							    //get all image files with a .jpg extension.
 							    $images = glob($directory . "*.png");
+                                                            //sort by natural order number
+                                                            natcasesort($images);
 							    $i = 1;
 							    //print each file name
-							    foreach($images as $image){						    
+							    foreach($images as $image){
 								$image = explode("/",$image);
 								$image = array_pop($image);
 								$img = $url_path . $image;
