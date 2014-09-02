@@ -346,7 +346,13 @@ div.bl-panel-items > div > div {
 	-webkit-overflow-scrolling: touch;
 }
 
+
+
 /* Custom content */
+.nooverflow
+{
+	overflow:hidden;
+}
 
 h2.panelheading
 {
@@ -354,6 +360,7 @@ h2.panelheading
 	position: fixed;
 	top: 0%;
 	font-size: 4em !important;
+	width: 100%;
 }
 
 
@@ -684,7 +691,7 @@ section.bl-expand .bl-icon-close {
 
 #cleanpage:hover
 {
-	right:-5%;
+	right:-7%;
 }
 
 .fa-power-off
