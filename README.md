@@ -6,9 +6,3 @@ My goal with this portfolio is to try and incorporate as many different programm
 
 I am putting this portfolio together because my current job has sold their web division
 There are plans for easter eggs and other fun gimmicks. We'll see how those turn out. 
-
-
-Licensed under the MIT License
-
-
-
